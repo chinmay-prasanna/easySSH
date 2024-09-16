@@ -15,7 +15,7 @@ if "GTK_PATH" in env.keys():
     env.pop("GTK_PATH")
 
 db_url = f"postgresql://{os.getenv('db_username')}:{os.getenv('db_password')}@{os.getenv('db_host')}/{os.getenv('db_name')}"
-engine = create_engine('postgresql://postgres:admin@localhost:5432/batadase')
+engine = create_engine(db_url)
 Session = sessionmaker(bind = engine)
 session = Session()
 
