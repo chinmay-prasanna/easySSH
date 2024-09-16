@@ -1,0 +1,159 @@
+body {
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+}
+
+button {
+    background-color: #000000;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+    margin: 5px;
+    margin-left: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+span {
+    margin: 0;
+}
+
+input[type=submit]{
+    width: 75px;
+    margin: 10px;
+    margin-left: 0;
+    border-radius: 0%;
+    background-color: white;
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+}
+
+.service-title {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.service-name {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-name:hover {
+    cursor: pointer;
+}
+
+.no-data-text {
+    font-style: italic;
+    font-size: 15px;
+    padding:0;
+    margin: 0;
+}
+
+.key-container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.key-list {
+    margin-top: 10px;
+    padding-top: 0;
+    list-style-type: disc;
+}
+
+.key-item-parent {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.key-item {
+    margin: 10px;
+    font-size: 17px;
+    width: 40px;
+}
+
+.add-service-button {
+    margin-top: 40px;
+    margin-left: 40px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.add-service-button:hover {
+    text-decoration: underline;
+}
+
+.add-key-button {
+    margin-top: 20px;
+    margin-left: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.add-key-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.connect-button {
+    background-color: black;
+    border: none;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.connect-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.delete-button {
+    width: fit-content;
+    background-color: #000000;
+    border: none;
+    color: gray;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+.add-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#add-service-form{
+    margin-left: 45px;
+}
+
+.expanded {
+    display: block;
+}
+
+.collapsed {
+    display: none;
+}

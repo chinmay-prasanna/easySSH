@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Eel App</title>
+</head>
+<body>
+    <!-- main container -->
+    <div class="container" id="container">
+        <!-- container for all services -->
+        <ul class="service-list" id="service-list">
+        </ul>
+        <button class="add-service-button" id="add-service-button" onclick="addService()">Add service</button>
+    </div>
+    <script type="text/javascript">    
+        eel.get_services()(function(services) {
+            createServices(services);
+        });
+    </script>
+</body>
